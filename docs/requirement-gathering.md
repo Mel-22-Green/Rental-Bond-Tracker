@@ -1,123 +1,133 @@
-# Requirements Gathering
+# Requirement Gathering for Week 3 Industrialized Class - Rental Bond Tracker
 
-## User Personas
+## 1. Project Overview
 
-### 1. Primary User: Tenant (Renter)
-- **Age:** 18–40  
-- **Tech level:** Basic to intermediate  
+| Aspect | Details |
+|--------|---------|
+| Project Name | Rental Bond Tracker |
+| Team Name | MEL22-Green |
+| Project Type | Full-stack Web Application |
+| Target Users | Tenants renting properties in Australia |
 
-**Goals:**
-- Track rental bond payments and refunds  
-- Store documents (lease, receipts)  
-- Record inspection details  
+## 2. Stakeholders Identified
 
-**Pain Points:**
-- Losing documents  
-- Disputes during bond claims  
-- Lack of transparency  
+| Stakeholder | Role | Responsibility |
+|-------------|------|----------------|
+| Tenants | End Users | Use the system to track bonds, properties, inspections, and documents |
+| Landlords/Agents | External | Provide bond information and conduct inspections (indirect users) |
+| Skillup Labs | Project Sponsor | Industry partner providing project oversight |
+| Mr Syed Altaf | Project Supervisor | Academic supervisor providing guidance and approval |
+| Development Team | MEL22-Green | Design, develop, test, and deploy the system |
 
----
+## 3. Functional Requirements Summary (FR1-FR90)
 
-### 2. Secondary User: Property Manager / Landlord (Optional Future User)
+| Module | FR Range | Count | Key Functions |
+|--------|----------|-------|---------------|
+| User Account Management | FR1-FR15 | 15 | Registration, login, profile update, password reset, account deletion |
+| Authentication & Authorization | FR16-FR25 | 10 | MD5 encryption, session timeout, account lock, logout |
+| Property Management | FR26-FR40 | 15 | Add/edit/delete property, landlord/agent details, property photos |
+| Rental Bond Management | FR41-FR55 | 15 | Record bond amount, status tracking (Paid/Pending/Refunded), bond history |
+| Inspection Records | FR56-FR70 | 15 | Create inspection, upload photos, condition notes, entry/exit inspections |
+| Document Management | FR71-FR85 | 15 | Upload lease, receipts, preview, download, delete documents |
+| Dashboard & Summary | FR86-FR90 | 5 | Bond summary, upcoming inspections, recent documents, quick actions |
+| Total | FR1-FR90 | 90 | |
 
-**Goals:**
-- View tenant records  
-- Verify bond and inspection data  
+## 4. Non-Functional Requirements Summary (NFR1-NFR25)
 
----
+| Category | NFR Range | Count | Key Requirements |
+|----------|-----------|-------|------------------|
+| Performance | NFR1-NFR2 | 2 | Page load <3 sec, API response <500ms |
+| Scalability | NFR3, NFR14 | 2 | Support 100 concurrent users |
+| Security | NFR4-NFR7, NFR21-NFR22 | 9 | MD5 encryption, HTTPS, SQL injection protection, audit log integrity |
+| Usability | NFR8-NFR10, NFR20, NFR25 | 6 | Mobile responsive, 5 min learning curve, export audit logs |
+| Reliability | NFR11-NFR13, NFR23 | 4 | 99.5% uptime, daily backups, 4 hour recovery |
+| Maintainability | NFR15-NFR16, NFR24 | 4 | Code comments, GitHub version control, API logging |
+| Compliance | NFR17-NFR18 | 2 | Australian Privacy Principles, data deletion on account removal |
+| Compatibility | NFR19 | 1 | Chrome, Firefox, Safari, Edge |
+| Total | NFR1-NFR25 | 25 | |
 
-## Functional Requirements
+## 5. Requirement Gathering Methods Used
 
-### Core Features
-- User registration, login, and profile management  
-- Property management (add/edit/delete properties)  
-- Rental bond tracking (amount, status, refund)  
-- Inspection record management (notes, photos)  
-- Document upload and storage  
-- Dashboard with summary and quick actions  
+| Method | Description | Status |
+|--------|-------------|--------|
+| Document Analysis | Reviewed project proposal from Skillup Labs | Completed |
+| Market Research | Analyzed competitors (RentBond, PropertyMe, InspectRealEstate) | Completed |
+| User Persona Creation | Developed tenant personas based on Australian rental market | Completed |
+| Stakeholder Consultation | Discussed requirements with project supervisor | In Progress |
+| Competitive Analysis | Compared existing solutions and identified gaps | Completed |
 
-### Examples
-- The system shall allow tenants to register and log in  
-- The system shall allow tenants to add and manage properties  
-- The system shall allow tenants to track bond payments and refunds  
-- The system shall allow tenants to upload and manage documents  
-- The system shall display dashboard summaries  
+## 6. User Personas
 
----
+| Persona | Name | Age | Situation | Needs |
+|---------|------|-----|-----------|-------|
+| First-time Renter | Sarah | 22 | Renting first apartment in Melbourne | Needs guidance on bond process and document organization |
+| Experienced Tenant | Michael | 30 | Has rented 3 properties in Sydney | Needs to track multiple bonds and inspection history |
+| Family Renter | Priya | 35 | Renting house with family in Brisbane | Needs to store lease agreements and inspection photos for each property |
 
-## Non-Functional Requirements
+## 7. Business Problem Specification
 
-### Performance
-- Pages load within 3 seconds  
-- API response within 500ms  
+**Problem Statement:**
 
-### Security
-- Password encryption  
-- HTTPS communication  
-- Protection against SQL injection & XSS  
+Tenants in Australia lack a centralized digital tool to manage rental bond payments, inspection records, and tenancy documents. Current methods (email, paper files, spreadsheets) lead to lost records, bond disputes, and financial loss.
 
-### Usability
-- Easy to use (no training required)  
-- Responsive design (mobile, tablet, desktop)  
+**Impact:**
 
-### Reliability
-- 99.5% uptime  
-- Daily backups  
+- Over 10,000 bond disputes annually in NSW alone
+- Average bond amount: $1,500 - $4,000
+- Tenants lose money due to missing inspection evidence
 
-### Scalability & Maintainability
-- Supports growing users  
-- Code stored in GitHub  
+**Proposed Solution:**
 
----
+A web-based Rental Bond Tracker enabling tenants to:
 
-## User Stories
+- Track bond amounts and status
+- Store property and inspection records
+- Upload and manage tenancy documents
+- Access all records from any device
 
-### Account Management
-- As a tenant  
-- I want to create an account  
-- So that I can access my rental data  
+## 8. Key Questions for Lecturer Approval
 
-### Property Management
-- As a tenant  
-- I want to add my rental property  
-- So that I can manage my lease information  
+| Question | Status |
+|----------|--------|
+| Are the 100 Functional Requirements approved? | Pending |
+| Are the 30 Non-Functional Requirements approved? | Pending |
+| Is the audit trail requirement sufficient? | Pending |
+| Can we proceed to System Design phase? | Pending |
 
-### Bond Tracking
-- As a tenant  
-- I want to record my bond payment  
-- So that I can track refund status  
+## 9. Next Steps After Approval
 
-### Inspection Records
-- As a tenant  
-- I want to upload inspection photos  
-- So that I can provide proof of property condition  
+| Phase | Deliverable | Due Date |
+|-------|-------------|----------|
+| System Design | Software Architecture, Technology Stack | Week 5 |
+| Database Design | ERD, Data Dictionary, Class Diagram | Week 5 |
+| UI/UX Design | Balsamiq Wireframes | Week 5 |
+| Development | Backend APIs, Frontend Implementation | Week 6-9 |
+| Testing | Test Plan, Test Cases | Week 10-11 |
+| Deployment | Live Application | Week 11 |
+| Demo | Final Presentation | Week 12 |
 
-### Document Storage
-- As a tenant  
-- I want to upload lease documents  
-- So that I can keep them safe and accessible  
+## 10. Document for Lecturer Sign-off
 
----
+**REQUIREMENT GATHERING APPROVAL FORM**
 
-## Acceptance Criteria
+Project: Rental Bond Tracker
 
-### Example 1: User Registration
-- User can enter email and password  
-- System validates input  
-- Account is created successfully  
-- Error shown if email already exists  
+Team: MEL22-Green
 
-### Example 2: Add Property
-- User enters property details  
-- System saves data correctly  
-- Property appears in list view  
+Date: 07/04/2026
 
-### Example 3: Record Bond
-- User enters bond amount and date  
-- System stores and displays bond status  
-- User can update status (Paid, Pending, Refunded)  
+Functional Requirements: 90 requirements (FR1-FR90) - Approved
 
-### Example 4: Upload Document
-- User uploads file (PDF, PNG, etc.)  
-- File size must be ≤ 10MB  
-- Document is saved and viewable  
+Non-Functional Requirements: 25 requirements (NFR1-NFR25) - Approved
+
+Audit Trail Requirements: Included - Approved
+
+Lecturer Signature: _________________________
+
+Date: _________________________
+
+**Remarks:**
+
+_____________________________________________________________________
+
+_____________________________________________________________________
