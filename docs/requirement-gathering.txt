@@ -1,0 +1,31 @@
+# Rental Bond Tracker
+
+A sample project repository for planning and documenting a solution that helps renters in Australia track their rental bond deposits, manage claims, and ensure fair returns at the end of a lease.
+
+## Project Overview
+Renters often lose track of their bond status, face disputes during claims, or miss deadlines for lodging returns. This project explores a platform concept that helps tenants monitor bond lodgement, store key documents, track condition reports, and manage the bond refund process more transparently.
+
+## Repository Structure
+- `docs/` — project documentation and planning files
+- `frontend/` — placeholder for frontend implementation
+- `backend/` — placeholder for backend implementation
+- `database/` — placeholder for database design and SQL schema
+- `tests/` — placeholder for test files
+- `deployment/` — placeholder for deployment configuration
+
+## Documentation
+- Problem Statement
+- Market Research
+- Software Requirements Specification
+- Architecture
+- API Specification
+
+## Notes
+- Track bond lodgement status with RTA (Residential Tenancies Authority) or equivalent state body
+- Set reminders for bond claim deadlines (e.g., within 14 days of lease end)
+- Store and compare entry/exit condition reports with timestamps and photos
+- Generate PDF bond claim forms pre-filled with tenant data
+- Track disputes and communication with landlords/agents
+- Multi-tenant support for shared rental properties
+- Integration with state tenancy databases for bond lookup
+- Export bond transaction history for personal records
