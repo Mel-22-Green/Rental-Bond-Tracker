@@ -106,27 +106,7 @@ A web-based Rental Bond Tracker enabling tenants to:
 | Deployment | Live Application | Week 11 |
 | Demo | Final Presentation | Week 12 |
 
-## 10. Document for Lecturer Sign-off
 
-**REQUIREMENT GATHERING APPROVAL FORM**
-
-Project: Rental Bond Tracker
-
-Team: MEL22-Green
-
-Date: 07/04/2026
-
-Functional Requirements: 90 requirements (FR1-FR90) - Approved
-
-Non-Functional Requirements: 25 requirements (NFR1-NFR25) - Approved
-
-Audit Trail Requirements: Included - Approved
-
-Lecturer Signature: _________________________
-
-Date: _________________________
-
-**Remarks:**
 
 _____________________________________________________________________
 
