@@ -8,9 +8,9 @@ Rental Bond Tracker is a full-stack web application designed to help tenants in 
 ## 📚 Project Documentation
 All project documents are organised below:
 
-- Problem Statement  [Problem Statement](docs/problem-statement.md)
-- Market Research  
-- Requirement Gathering  
+- [Problem Statement](docs/problem-statement.md)
+- [Market Research](docs/market-research.md)
+- [Requirement Gathering](docs/requirements.md)
 - User Personas  
 - Functional Requirements  
 - Non-Functional Requirements  
