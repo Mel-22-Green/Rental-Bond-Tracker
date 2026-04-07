@@ -98,6 +98,9 @@
 - So that I can keep them safe and accessible  
 
 ---
+## Documentation
+
+- [Functional and Non-Functional Requirements (FR1-FR90 & NFR1-NFR25)](https://drive.google.com/file/d/1Z47bZCQTopjpzrv_OgihvTgO0SO6bwi0/view?usp=sharing)
 
 ## Acceptance Criteria
 
