@@ -10,7 +10,7 @@ All project documents are organised below:
 
 - [Problem Statement](docs/problem-statement.md)
 - [Market Research](docs/market-research.md)
-- [Requirement Gathering](docs/requirements.md)
+- [Requirement Gathering](docs/requirement-gathering.md)
 - User Personas  
 - Functional Requirements  
 - Non-Functional Requirements  
