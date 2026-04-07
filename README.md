@@ -10,7 +10,7 @@ Renters often lose track of their bond status, face disputes during claims, or m
 - `frontend/` — placeholder for frontend implementation
 - `backend/` — placeholder for backend implementation
 - `database/` — placeholder for database design and SQL schema
-- `tests/` — placeholder for test files
+- `tests/` — placeholder for test files  
 - `deployment/` — placeholder for deployment configuration
 
 ## Documentation
@@ -18,7 +18,7 @@ Renters often lose track of their bond status, face disputes during claims, or m
 - [Market Research](docs/market-research.md)
 - [Requirement Gathering](docs/requirement-gathering.md)
 - [Architecture](docs/architecture.md)
-- API Specification
+- API Specification   
 
 ## Notes
 - Track bond lodgement status with RTA (Residential Tenancies Authority) or equivalent state body
