@@ -89,8 +89,8 @@ A web-based Rental Bond Tracker enabling tenants to:
 
 | Question | Status |
 |----------|--------|
-| Are the 100 Functional Requirements approved? | Pending |
-| Are the 30 Non-Functional Requirements approved? | Pending |
+| Are the 90 Functional Requirements approved? | Pending |
+| Are the 25 Non-Functional Requirements approved? | Pending |
 | Is the audit trail requirement sufficient? | Pending |
 | Can we proceed to System Design phase? | Pending |
 
