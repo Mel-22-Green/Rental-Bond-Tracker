@@ -17,7 +17,7 @@ Renters often lose track of their bond status, face disputes during claims, or m
 - [Problem Statement](docs/problem-statement.md)
 - [Market Research](docs/market-research.md)
 - [Requirement Gathering](docs/requirement-gathering.md)
-- Architecture
+- [Architecture](docs/architecture.md)
 - API Specification
 
 ## Notes
