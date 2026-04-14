@@ -10,7 +10,7 @@ Renters often lose track of their bond status, face disputes during claims, or m
 - `frontend/` — placeholder for frontend implementation
 - `backend/` — placeholder for backend implementation
 - `database/` — placeholder for database design and SQL schema
-- `tests/` — placeholder for test files  
+- `tests/` — placeholder for test files 
 - `deployment/` — placeholder for deployment configuration
 
 ## Documentation
