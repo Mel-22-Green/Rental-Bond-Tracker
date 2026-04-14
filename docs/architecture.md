@@ -1,25 +1,36 @@
-SYSTEM ARCHITECTURE (Rental Bond Tracker)
-This system follows a 3-tier layered architecture consisting of Presentation Layer, Application Layer, and Data Layer.
+## Technology Stack
 
-Presentation Layer:
-The user (tenant) interacts with the system through a web browser. The frontend web application provides the user interface and communicates with the backend via HTTPS for secure data transmission.
+### Frontend
+- React.js (for building user interface and forms)
 
-Application Layer:
-The backend is built using Node.js and Express, acting as an API Gateway. It processes incoming requests and routes them to different core services:
-- Auth Service: Handles user authentication and login
-- Property Service: Manages property details
-- Inspection Service: Handles inspection records
-- Document Service: Manages file uploads and documents
+### Backend
+- Node.js with Express.js (for API development and business logic)
 
-Core services are modular and ensure separation of concerns within the system.
+### Database
+- PostgreSQL (for storing structured tenancy data)
 
-Data Layer:
-The system uses a relational database (MySQL) to store structured data such as users, properties, and bonds. File storage (cloud or local) is used to store documents and images.
+### Authentication
+- JSON Web Token (JWT) for secure login and session management
 
-External Services:
-The system can integrate with external services such as SMS, Email, and Notification systems for communication.
+### Deployment (optional)
+- Vercel (Frontend)
+- Render / Railway (Backend & Database)
 
-Data Flow:
-- Downward arrows represent write/request operations
-- Upward arrows represent read/response operations
-- Horizontal arrows represent communication between services or external APIs
+---
+
+## Component Description
+
+### 1. Frontend (React Application)
+Handles user interaction, including forms for bond tracking, property details, inspections, and document uploads. It communicates with the backend through RESTful APIs and displays data on the dashboard.
+
+### 2. Backend (Node.js / Express Server)
+Processes client requests, handles business logic, and manages communication between the frontend and database. It includes API endpoints for users, bonds, properties, inspections, and documents.
+
+### 3. Authentication Service
+Manages user registration and login. Uses JWT to verify user identity and protect secured routes.
+
+### 4. Database (PostgreSQL)
+Stores all system data, including user accounts, bond records, property details, inspection reports, and uploaded documents in a structured relational format.
+
+### 5. Application Logic Layer
+Handles core functionalities such as bond tracking, property management, inspection recording, and document storage.
