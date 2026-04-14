@@ -1,6 +1,6 @@
 ## Architecture Diagram
 
-## System Architecture Explanation
+### System Architecture Explanation
 
 This diagram represents a **3-layer architecture** of the Rental Bond Tracker system.
 
