@@ -1,5 +1,35 @@
 ## Architecture Diagram
 
+## System Architecture Explanation
+
+This diagram represents a **3-layer architecture** of the Rental Bond Tracker system.
+
+The system is accessed by the **User (Tenant)** through a web browser (frontend). The frontend communicates securely with the backend using **HTTPS**.
+
+### Application Layer (Node.js + Express)
+The Application Layer acts as an **API Gateway**, responsible for receiving and processing all incoming requests from the frontend and routing them to the appropriate services.
+
+### Core Services Layer
+This layer consists of modular services, each handling a specific functionality:
+
+- **Auth Service** – Handles user authentication and login
+- **Property Service** – Manages property information
+- **Inspection Service** – Handles inspection records
+- **Document Service** – Manages file uploads and documents
+
+### Data Layer
+The system interacts with the following components for data storage:
+
+- **MySQL Database** – Stores structured data such as users, bonds, and properties
+- **File Storage / Cloud** – Stores uploaded documents and images
+
+### External Services
+The system can also integrate with external services such as:
+
+- SMS services  
+- Email services  
+- Notification systems  
+
 
 ## Technology Stack
 
