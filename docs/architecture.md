@@ -71,3 +71,7 @@ Stores all system data, including user accounts, bond records, property details,
 Handles core functionalities such as bond tracking, property management, inspection recording, and document storage.
 
 ## Data Flow Diagram
+
+### DFD level 1 
+<img width="624" height="477" alt="image" src="https://github.com/user-attachments/assets/492098be-5519-4d11-9395-251804014c39" />
+
