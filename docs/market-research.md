@@ -33,7 +33,6 @@ In Australia, where rental bonds are regulated and disputes are common, there is
 
 This creates an opportunity to develop a platform that specifically addresses tenant needs in managing rental information.
 
-
 ## 4. Unique Value Proposition (UVP)
 
 The **Rental Bond Tracker** provides a **tenant-first, centralised platform** that:
