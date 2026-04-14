@@ -39,6 +39,6 @@ The **Rental Bond Tracker** provides a **tenant-first, centralised platform** th
 
 - Focuses specifically on rental bond tracking  
 - Combines documents, inspections, and payments in one system  
-- Offers a clear tenancy timeline and history  
+- Offers a clear tenancy timeline and history 
 - Simplifies record management for non-technical users  
 - Targets the Australian rental market  
