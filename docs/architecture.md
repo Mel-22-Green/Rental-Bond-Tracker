@@ -1,3 +1,6 @@
+## Architecture Diagram
+
+
 ## Technology Stack
 
 ### Frontend
@@ -34,3 +37,5 @@ Stores all system data, including user accounts, bond records, property details,
 
 ### 5. Application Logic Layer
 Handles core functionalities such as bond tracking, property management, inspection recording, and document storage.
+
+## Data Flow Diagram
