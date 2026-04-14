@@ -1,4 +1,5 @@
 ## Architecture Diagram
+<img width="820" height="1187" alt="image" src="https://github.com/user-attachments/assets/5661abc7-d451-4a02-842a-a212df0487b6" />
 
 ### System Architecture Explanation
 
