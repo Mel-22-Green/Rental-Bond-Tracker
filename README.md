@@ -20,7 +20,7 @@ Renters often lose track of their bond status, face disputes during claims, or m
 - [Architecture](docs/architecture.md)
 - [API Specification](docs/api-spec.md)
 - [UI-UX DESIGN](docs/ui-ux-design.md)
-- [SRS REPORT](./doCS/Rental bond tracker.pdf) 
+- [Download SRS Report Word Document](./docs/srs-report.docx) 
 
 ## Notes
 - Track bond lodgement status with RTA (Residential Tenancies Authority) or equivalent state body
