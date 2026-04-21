@@ -73,6 +73,7 @@ All pages share a common layout:
 | 👤 | Profile | /profile | User account settings |
 
 Documentation : https://docs.google.com/document/d/1Y-MASU4Ta8c-Wv80VFwmTJi2OadiOC1K/edit?usp=drive_link&ouid=109148095195788262529&rtpof=true&sd=true 
+Balsamiq : https://docs.google.com/document/d/1dRLajeVu486wb1cwCoLiI4iSyQeuDUMS/edit?usp=drive_link&ouid=109148095195788262529&rtpof=true&sd=true
 
 ---
 
