@@ -31,7 +31,7 @@ Current solutions in the market mainly focus on landlords or property managers r
 
 In Australia, where rental bonds are regulated and disputes are common, there is a clear need for a simple and tenant-focused solution. Many tenants still rely on manual methods or generic tools, which are inefficient and prone to errors.
 
-This creates an opportunity to develop a platform that specifically addresses tenant needs in managing rental information.
+This creates an opportunity to develop a platform that specifically addresses tenant needs in managing rental information. 
 
 ## 4. Unique Value Proposition (UVP)
 
