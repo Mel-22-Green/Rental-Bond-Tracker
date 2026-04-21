@@ -1,5 +1,5 @@
 # UI/UX Design - Rental Bond Tracker
-Documentation : https://docs.google.com/document/d/1Y-MASU4Ta8c-Wv80VFwmTJi2OadiOC1K/edit?usp=drive_link&ouid=109148095195788262529&rtpof=true&sd=true 
+
 ---
 
 ## 1. Objective
@@ -71,6 +71,8 @@ All pages share a common layout:
 | 📋 | Inspections | /inspections | Record inspections |
 | 📄 | Documents | /documents | Manage uploaded files |
 | 👤 | Profile | /profile | User account settings |
+
+Documentation : https://docs.google.com/document/d/1Y-MASU4Ta8c-Wv80VFwmTJi2OadiOC1K/edit?usp=drive_link&ouid=109148095195788262529&rtpof=true&sd=true 
 
 ---
 
