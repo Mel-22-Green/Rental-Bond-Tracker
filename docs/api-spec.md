@@ -70,8 +70,8 @@ Create a new tenant account.
 
 Request Body:
 {
-    "full_name": "John Tenant",
-    "email": "john@example.com",
+    "full_name": "Aayush Tenant",
+    "email": "Aayush@example.com",
     "password": "12345678",
     "phone": "0412345678"
 }
