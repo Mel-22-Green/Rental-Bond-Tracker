@@ -1,0 +1,21 @@
+1.1.4 PROJECT ASSUMPTION: 
+Stakeholder Assumptions: 
+• When filling property details and bond records, tenants will be honest in their 
+information. 
+• The project supervisor will also offer feedback in time when it comes to requirement 
+validation and testing. 
+• Skillup Labs will be the project sponsor and offer the needed support. 
+User-Related Assumptions: 
+• End users (tenants) are fairly computer literate and able to navigate a web application. 
+• The users will be guided on document uploads and data entry. 
+• Users have access to a computer or mobile device that is connected to the internet. 
+Technical Assumptions: 
+• Users have a modern web browser (Chrome, Firefox, Safari, Edge). 
+5 
+• The environment used will have adequate storage and processing capacity. 
+• The development environment (Node.js, PostgreSQL) is not going to change during 
+the project. 
+Operational Assumptions: 
+• The team members will accomplish their tasks within the 12-week schedule. 
+• To monitor progress, team meetings will take place weekly. 
+• Before the deployment of the system, it will be thoroughly tested.
