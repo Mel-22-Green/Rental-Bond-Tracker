@@ -88,8 +88,8 @@ Success Response (201 Created):
     "message": "User registered successfully",
     "user": {
         "user_id": 1,
-        "full_name": "John Tenant",
-        "email": "john@example.com"
+        "full_name": "Aayush Tenant",
+        "email": "Aayush@example.com"
     }
 }
 
@@ -114,7 +114,7 @@ Authenticate a user and receive JWT token.
 
 Request Body:
 {
-    "email": "john@example.com",
+    "email": "Aayush@example.com",
     "password": "12345678"
 }
 
@@ -124,8 +124,8 @@ Success Response (200 OK):
     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
     "user": {
         "user_id": 1,
-        "full_name": "John Tenant",
-        "email": "john@example.com"
+        "full_name": "Aayush Tenant",
+        "email": "Aayush@example.com"
     }
 }
 
@@ -196,7 +196,7 @@ Request password reset link.
 
 Request Body:
 {
-    "email": "john@example.com"
+    "email": "Aayush@example.com"
 }
 
 Success Response (200 OK):
@@ -294,9 +294,9 @@ Success Response (200 OK):
     "property_id": 1,
     "user_id": 1,
     "address": "123 Main Street, Melbourne VIC 3000",
-    "landlord_name": "Jane Smith",
+    "landlord_name": "Aayush Bhandari",
     "landlord_phone": "0412345678",
-    "landlord_email": "jane@email.com",
+    "landlord_email": "Aayush@email.com",
     "agent_name": "Real Estate Agency",
     "agent_phone": "0398765432",
     "lease_start": "2026-01-01",
@@ -326,9 +326,9 @@ Add a new property.
 Request Body:
 {
     "address": "123 Main Street, Melbourne VIC 3000",
-    "landlord_name": "Jane Smith",
+    "landlord_name": "Aayush Bhandari",
     "landlord_phone": "0412345678",
-    "landlord_email": "jane@email.com",
+    "landlord_email": "Aayush@email.com",
     "agent_name": "Real Estate Agency",
     "agent_phone": "0398765432",
     "lease_start": "2026-01-01",
@@ -354,7 +354,7 @@ Success Response (201 Created):
     "property": {
         "property_id": 1,
         "address": "123 Main Street, Melbourne VIC 3000",
-        "landlord_name": "Jane Smith"
+        "landlord_name": "Aayush Bhandari"
     }
 }
 
@@ -385,7 +385,7 @@ URL Parameters:
 Request Body:
 {
     "address": "456 New Street, Melbourne VIC 3000",
-    "landlord_name": "Jane Smith Updated",
+    "landlord_name": "Aayush Bhandari Updated",
     "is_current": false
 }
 
@@ -395,7 +395,7 @@ Success Response (200 OK):
     "property": {
         "property_id": 1,
         "address": "456 New Street, Melbourne VIC 3000",
-        "landlord_name": "Jane Smith Updated"
+        "landlord_name": "Aayush Bhandari Updated"
     }
 }
 
