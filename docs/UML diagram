@@ -1,0 +1,37 @@
+# Sequence Diagrams
+
+## 1. Register
+
+![Register Sequence Diagram](media/image1.png)
+
+*This Sequence Diagram illustrates the process of a user creating a new account. The customer enters registration information, the system verifies its validity, and saves the data to the user database. After successful registration, the account is created and ready for use.*
+
+## 2. Login
+
+![Login Sequence Diagram](media/image2.png)
+
+*This diagram illustrates the user login process. The user enters their authentication information, and the system checks it against the database. If the information is valid, the user is successfully logged in; otherwise, an error message is displayed.*
+
+## 3. Manage Property
+
+![Manage Property Sequence Diagram](media/image3.png)
+
+*This diagram describes the process of a user adding or updating property information. The data is sent to the management module and stored in the database. The system then returns a confirmation to the user.*
+
+## 4. Upload Document
+
+![Upload Document Sequence Diagram](media/image4.png)
+
+*This sequence diagram describes the process of uploading documents to the system. The user submits the file, the system processes and stores it in the document database. Upon completion, the system notifies the user of a successful upload.*
+
+## 5. Request Inspection
+
+![Request Inspection Sequence Diagram](media/image5.png)
+
+*This diagram illustrates the process of a user requesting an inspection. The request is sent to the system, stored in the database, and confirmed by the user after successful completion.*
+
+## 6. View Dashboard
+
+![View Dashboard Sequence Diagram](media/image6.png)
+
+*This Sequence Diagram describes how the system aggregates data to display the dashboard. The system retrieves information from multiple sources (property, document, inspection, bond) and returns an overview interface to the user.*
