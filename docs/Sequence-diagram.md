@@ -9,7 +9,7 @@ Sequence diagrams show the interaction between users and system components over 
 
 ## 1. User Registration
 
-**Diagram Placeholder:** `![Register Sequence Diagram]
+**Diagram Placeholder:** `![Register Sequence Diagram]`
 <img width="624" height="415" alt="register-sequence" src="https://github.com/user-attachments/assets/0e983936-1a3d-4626-9620-095cd7f9ef0e" />
 
 
@@ -36,7 +36,7 @@ Sequence diagrams show the interaction between users and system components over 
 
 ## 2. User Login
 
-**Diagram Placeholder:** `![Login Sequence Diagram]
+**Diagram Placeholder:** `![Login Sequence Diagram]`
 <img width="519" height="411" alt="login-sequence" src="https://github.com/user-attachments/assets/d8c8a6a6-3466-4b7a-baaf-9a5a5a2abe80" />
 
 
@@ -64,7 +64,7 @@ Sequence diagrams show the interaction between users and system components over 
 
 ## 3. Manage Property (Add/Edit)
 
-**Diagram Placeholder:** `![Manage Property Sequence Diagram]
+**Diagram Placeholder:** `![Manage Property Sequence Diagram]`
 <img width="496" height="406" alt="property-sequence" src="https://github.com/user-attachments/assets/e12a7e2e-2355-49bf-bbf8-6b22b062a561" />
 
 
@@ -91,7 +91,9 @@ Sequence diagrams show the interaction between users and system components over 
 
 ## 4. Upload Document
 
-**Diagram Placeholder:** `![Upload Document Sequence Diagram](docs/diagrams/document-sequence.png)`
+**Diagram Placeholder:** `![Upload Document Sequence Diagram]`
+<img width="441" height="393" alt="document-sequence" src="https://github.com/user-attachments/assets/c6b55aa1-98b4-43da-a4dd-433948cec32b" />
+
 
 **Description:** This sequence diagram describes the process of uploading documents to the system. The user selects a file from their computer, adds a title and optional description, and submits the form. The system validates the file type (PDF, JPEG, PNG, DOCX) and size (maximum 10MB). The file is uploaded to AWS S3 cloud storage, and metadata is stored in the document database. Upon completion, the system notifies the user of a successful upload and displays the document in the list.
 
@@ -118,7 +120,8 @@ Sequence diagrams show the interaction between users and system components over 
 
 ## 5. Request Inspection
 
-**Diagram Placeholder:** `![Request Inspection Sequence Diagram](./diagrams/inspection-sequence.png)`
+**Diagram Placeholder:** `![Request Inspection Sequence Diagram]`
+<img width="441" height="393" alt="document-sequence" src="https://github.com/user-attachments/assets/d565f892-1ce2-4b1b-bbd4-021ab86cc908" />
 
 **Description:** This diagram illustrates the process of a user requesting or recording an inspection. The user selects a property, enters the inspection date, chooses the inspection type (Entry, Routine, or Exit), adds condition notes, and optionally uploads photos. The request is sent to the inspection management module, validated, and stored in the inspection database. Any uploaded photos are linked to the inspection record. The inspection is confirmed by the user after successful completion.
 
@@ -145,7 +148,8 @@ Sequence diagrams show the interaction between users and system components over 
 
 ## 6. View Dashboard
 
-**Diagram Placeholder:** `![View Dashboard Sequence Diagram](./diagrams/dashboard-sequence.png)`
+**Diagram Placeholder:** `![View Dashboard Sequence Diagram]`
+<img width="624" height="496" alt="dashboard-sequence" src="https://github.com/user-attachments/assets/1a6f9650-d1dc-4ce9-97f5-da87c13e6156" />
 
 **Description:** This sequence diagram describes how the system aggregates data to display the dashboard. The user requests the dashboard page after logging in. The system retrieves information from multiple sources including the properties database, bonds database, inspections database, and documents database. The dashboard controller aggregates the data into statistics including property count, active bond amount, inspection count, and document count. The system also fetches recent properties and recent documents. Finally, the system returns an overview interface to the user with all aggregated data displayed in cards and lists.
 
@@ -176,19 +180,6 @@ Sequence diagrams show the interaction between users and system components over 
 15. UI shows quick action buttons
 
 ---
-
-## Diagram Files Location
-
-Once uploaded, the images will be stored in the `/docs/diagrams/` folder:
-
-| Diagram | File Name | Status |
-|---------|-----------|--------|
-| Register Sequence | `register-sequence.png` | Pending Upload |
-| Login Sequence | `login-sequence.png` | Pending Upload |
-| Manage Property Sequence | `property-sequence.png` | Pending Upload |
-| Upload Document Sequence | `document-sequence.png` | Pending Upload |
-| Request Inspection Sequence | `inspection-sequence.png` | Pending Upload |
-| View Dashboard Sequence | `dashboard-sequence.png` | Pending Upload |
 
 ---
 
