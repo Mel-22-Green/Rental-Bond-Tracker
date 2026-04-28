@@ -82,6 +82,8 @@ Balsamiq : https://docs.google.com/document/d/1dRLajeVu486wb1cwCoLiI4iSyQeuDUMS/
 ## 7. Screen Designs
 
 ### 7.1 Login Page
+<img width="975" height="507" alt="image" src="https://github.com/user-attachments/assets/d923fcb2-a6b0-4139-bc4d-e8d00ba98951" />
+
 
 **Purpose:** User authentication
 
@@ -97,9 +99,12 @@ Balsamiq : https://docs.google.com/document/d/1dRLajeVu486wb1cwCoLiI4iSyQeuDUMS/
 
 **Background:** Full-screen slow-motion video of residential area with dark overlay
 
+
 ---
 
 ### 7.2 Register Page
+<img width="975" height="507" alt="image" src="https://github.com/user-attachments/assets/9146af85-f66f-4546-823f-aac5ff4f3607" />
+
 
 **Purpose:** New user account creation
 
@@ -124,6 +129,8 @@ Balsamiq : https://docs.google.com/document/d/1dRLajeVu486wb1cwCoLiI4iSyQeuDUMS/
 ---
 
 ### 7.3 Dashboard Page
+<img width="975" height="598" alt="image" src="https://github.com/user-attachments/assets/f931a446-a067-4b35-9db3-6f5fb3e58012" />
+
 
 **Purpose:** Overview of all activities and statistics
 
@@ -188,6 +195,8 @@ Balsamiq : https://docs.google.com/document/d/1dRLajeVu486wb1cwCoLiI4iSyQeuDUMS/
 ---
 
 ### 7.5 Bonds Page
+<img width="975" height="627" alt="image" src="https://github.com/user-attachments/assets/9c7ecdcc-7c8e-4e91-a1ef-1df161e20f32" />
+
 
 **Purpose:** Track rental bond payments
 
@@ -223,6 +232,8 @@ Balsamiq : https://docs.google.com/document/d/1dRLajeVu486wb1cwCoLiI4iSyQeuDUMS/
 ---
 
 ### 7.6 Inspections Page
+<img width="975" height="609" alt="image" src="https://github.com/user-attachments/assets/c7131776-bb10-4a91-96b7-e96c1d3e0393" />
+
 
 **Purpose:** Record property inspections
 
@@ -254,6 +265,7 @@ Balsamiq : https://docs.google.com/document/d/1dRLajeVu486wb1cwCoLiI4iSyQeuDUMS/
 ---
 
 ### 7.7 Documents Page
+<img width="975" height="635" alt="image" src="https://github.com/user-attachments/assets/529979c8-d6af-4cc2-b40e-f73d0dfbe977" />
 
 **Purpose:** Manage uploaded tenancy documents
 
@@ -289,6 +301,7 @@ Balsamiq : https://docs.google.com/document/d/1dRLajeVu486wb1cwCoLiI4iSyQeuDUMS/
 ---
 
 ### 7.8 Profile Page
+<img width="975" height="558" alt="image" src="https://github.com/user-attachments/assets/736c478a-8ecd-4c8b-a942-593c86b47fc0" />
 
 **Purpose:** User account settings
 
