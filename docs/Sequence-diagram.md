@@ -9,7 +9,7 @@ Sequence diagrams show the interaction between users and system components over 
 
 ## 1. User Registration
 
-**Diagram Placeholder:** `![Register Sequence Diagram](main/docs/diagrams/register-sequence.png)`
+**Diagram Placeholder:** `![Register Sequence Diagram](https://raw.githubusercontent.com/Mel-22-Green/Rental-Bond-Tracker/main/docs/diagrams/register-sequence.png)`
 
 **Description:** This sequence diagram illustrates the process of a user creating a new account. The customer enters registration information including full name, email, password, and phone number. The system validates the input, checks if the email already exists, encrypts the password using MD5 hashing, and saves the data to the user database. After successful registration, the account is created and ready for use. The user receives a confirmation message and is redirected to the login page.
 
