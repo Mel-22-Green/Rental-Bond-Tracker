@@ -10,7 +10,7 @@ The Class Diagram shows the static structure of the Rental Bond Tracker system, 
 
 ## Diagram Placeholder
 
-**Image:** `![Class Diagram]`
+**Image:** [Class Diagram]
 <img width="927" height="634" alt="image" src="https://github.com/user-attachments/assets/b51f9a0d-3c2c-49fe-80b3-da0f7bc44fb6" />
 
 
