@@ -1,7 +1,6 @@
 # Sequence Diagrams - Rental Bond Tracker
 
 ---
-
 ## Overview
 
 Sequence diagrams show the interaction between users and system components over time. The following diagrams illustrate the main workflows in the Rental Bond Tracker application.
