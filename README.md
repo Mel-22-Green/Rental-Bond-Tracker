@@ -21,7 +21,8 @@ Renters often lose track of their bond status, face disputes during claims, or m
 - [API Specification](docs/api-spec.md)
 - [UI-UX DESIGN](docs/ui-ux-design.md)
 - [Download SRS Report Word Document](./docs/srs-report.docx) 
-
+- [Class diagram](docs/class-diagram.md)
+- [Sequence diagram](docs/sequence-diagram.md)
 ## Notes
 - Track bond lodgement status with RTA (Residential Tenancies Authority) or equivalent state body
 - Set reminders for bond claim deadlines (e.g., within 14 days of lease end)
