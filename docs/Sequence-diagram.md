@@ -85,7 +85,7 @@ Sequence diagrams show the interaction between users and system components over 
 
 ## 4. Upload Document
 
-**Diagram Placeholder:** `![Upload Document Sequence Diagram](./diagrams/document-sequence.png)`
+**Diagram Placeholder:** `![Upload Document Sequence Diagram](docs/diagrams/document-sequence.png)`
 
 **Description:** This sequence diagram describes the process of uploading documents to the system. The user selects a file from their computer, adds a title and optional description, and submits the form. The system validates the file type (PDF, JPEG, PNG, DOCX) and size (maximum 10MB). The file is uploaded to AWS S3 cloud storage, and metadata is stored in the document database. Upon completion, the system notifies the user of a successful upload and displays the document in the list.
 
