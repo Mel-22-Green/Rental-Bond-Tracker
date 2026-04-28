@@ -9,8 +9,9 @@ Sequence diagrams show the interaction between users and system components over 
 
 ## 1. User Registration
 
-**Diagram Placeholder:** `![Register Sequence Diagram](<img width="624" height="415" alt="image" src="https://github.com/user-attachments/assets/68629df8-6796-435c-89d9-0bdce071144e" />
-)`
+**Diagram Placeholder:** `![Register Sequence Diagram]
+<img width="624" height="415" alt="register-sequence" src="https://github.com/user-attachments/assets/0e983936-1a3d-4626-9620-095cd7f9ef0e" />
+
 
 **Description:** This sequence diagram illustrates the process of a user creating a new account. The customer enters registration information including full name, email, password, and phone number. The system validates the input, checks if the email already exists, encrypts the password using MD5 hashing, and saves the data to the user database. After successful registration, the account is created and ready for use. The user receives a confirmation message and is redirected to the login page.
 
@@ -35,7 +36,9 @@ Sequence diagrams show the interaction between users and system components over 
 
 ## 2. User Login
 
-**Diagram Placeholder:** `![Login Sequence Diagram](./diagrams/login-sequence.png)`
+**Diagram Placeholder:** `![Login Sequence Diagram]
+<img width="519" height="411" alt="login-sequence" src="https://github.com/user-attachments/assets/d8c8a6a6-3466-4b7a-baaf-9a5a5a2abe80" />
+
 
 **Description:** This diagram illustrates the user login process. The user enters their email address and password. The system validates the credentials, checks the database for a matching email, compares the MD5 hash of the entered password with the stored hash, generates a JWT token upon successful authentication, and records the login event in the audit log. If the information is valid, the user is successfully logged in and redirected to the dashboard. If invalid, an error message is displayed.
 
@@ -61,7 +64,9 @@ Sequence diagrams show the interaction between users and system components over 
 
 ## 3. Manage Property (Add/Edit)
 
-**Diagram Placeholder:** `![Manage Property Sequence Diagram](./diagrams/property-sequence.png)`
+**Diagram Placeholder:** `![Manage Property Sequence Diagram]
+<img width="496" height="406" alt="property-sequence" src="https://github.com/user-attachments/assets/e12a7e2e-2355-49bf-bbf8-6b22b062a561" />
+
 
 **Description:** This diagram describes the process of a user adding or updating property information. The user enters property details including address, landlord name, agent information, and lease dates. The data is sent to the property management module, validated, and stored in the database. An audit log entry is created for the action. The system then returns a confirmation to the user and displays the updated property list.
 
