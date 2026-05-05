@@ -8,6 +8,7 @@ The objective of this phase is to define RESTful APIs that enable communication 
 
 ---
 
+
 ## 2. Base Information
 
 | Item | Value |
@@ -57,6 +58,7 @@ Error Response:
 ---
 
 ## 6. Authentication APIs
+<img width="1875" height="1002" alt="Screenshot 2026-05-04 184921" src="https://github.com/user-attachments/assets/1c09bda9-ad7e-4219-a320-6bc1d9a98831" />
 
 ### 6.1 Register User
 
@@ -103,6 +105,7 @@ Error Responses:
 ---
 
 ### 6.2 Login User
+<img width="1822" height="1032" alt="Screenshot 2026-05-04 184857" src="https://github.com/user-attachments/assets/066ebac3-b2c6-40b7-976b-6148f6364116" />
 
 Authenticate a user and receive JWT token.
 
