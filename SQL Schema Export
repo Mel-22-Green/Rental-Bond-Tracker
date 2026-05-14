@@ -1,1 +1,451 @@
 
+--
+-- PostgreSQL database dump
+--
+
+\restrict b3VVcetJj5C1YySW2FJ3yMG8TTligCF5ZJ3g6i1cltvwlUvFaAbSLMcOhNLXz7d
+
+-- Dumped from database version 18.3
+-- Dumped by pg_dump version 18.3
+
+-- Started on 2026-05-01 14:12:20
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET transaction_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+SET default_tablespace = '';
+
+SET default_table_access_method = heap;
+
+--
+-- TOC entry 230 (class 1259 OID 16527)
+-- Name: audit_logs; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.audit_logs (
+    log_id integer NOT NULL,
+    user_id integer,
+    action_type character varying(20) NOT NULL,
+    description text NOT NULL,
+    "timestamp" timestamp without time zone DEFAULT CURRENT_TIMESTAMP
+);
+
+
+ALTER TABLE public.audit_logs OWNER TO postgres;
+
+--
+-- TOC entry 229 (class 1259 OID 16526)
+-- Name: audit_logs_log_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public.audit_logs_log_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.audit_logs_log_id_seq OWNER TO postgres;
+
+--
+-- TOC entry 5064 (class 0 OID 0)
+-- Dependencies: 229
+-- Name: audit_logs_log_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public.audit_logs_log_id_seq OWNED BY public.audit_logs.log_id;
+
+
+--
+-- TOC entry 224 (class 1259 OID 16471)
+-- Name: bonds; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.bonds (
+    bond_id integer NOT NULL,
+    property_id integer NOT NULL,
+    amount numeric(10,2) NOT NULL,
+    payment_date date NOT NULL,
+    status character varying(20) DEFAULT 'Pending'::character varying,
+    refund_amount numeric(10,2)
+);
+
+
+ALTER TABLE public.bonds OWNER TO postgres;
+
+--
+-- TOC entry 223 (class 1259 OID 16470)
+-- Name: bonds_bond_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public.bonds_bond_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.bonds_bond_id_seq OWNER TO postgres;
+
+--
+-- TOC entry 5065 (class 0 OID 0)
+-- Dependencies: 223
+-- Name: bonds_bond_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public.bonds_bond_id_seq OWNED BY public.bonds.bond_id;
+
+
+--
+-- TOC entry 228 (class 1259 OID 16506)
+-- Name: documents; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.documents (
+    document_id integer NOT NULL,
+    user_id integer NOT NULL,
+    title character varying(200) NOT NULL,
+    file_name character varying(255) NOT NULL,
+    file_path character varying(255) NOT NULL,
+    file_type character varying(50) NOT NULL,
+    uploaded_at timestamp without time zone DEFAULT CURRENT_TIMESTAMP
+);
+
+
+ALTER TABLE public.documents OWNER TO postgres;
+
+--
+-- TOC entry 227 (class 1259 OID 16505)
+-- Name: documents_document_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public.documents_document_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.documents_document_id_seq OWNER TO postgres;
+
+--
+-- TOC entry 5066 (class 0 OID 0)
+-- Dependencies: 227
+-- Name: documents_document_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public.documents_document_id_seq OWNED BY public.documents.document_id;
+
+
+--
+-- TOC entry 226 (class 1259 OID 16488)
+-- Name: inspections; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.inspections (
+    inspection_id integer NOT NULL,
+    property_id integer NOT NULL,
+    inspection_date date NOT NULL,
+    inspection_type character varying(20) NOT NULL,
+    condition_notes text,
+    photo_path character varying(500) NOT NULL
+);
+
+
+ALTER TABLE public.inspections OWNER TO postgres;
+
+--
+-- TOC entry 225 (class 1259 OID 16487)
+-- Name: inspections_inspection_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public.inspections_inspection_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.inspections_inspection_id_seq OWNER TO postgres;
+
+--
+-- TOC entry 5067 (class 0 OID 0)
+-- Dependencies: 225
+-- Name: inspections_inspection_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public.inspections_inspection_id_seq OWNED BY public.inspections.inspection_id;
+
+
+--
+-- TOC entry 222 (class 1259 OID 16452)
+-- Name: properties; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.properties (
+    property_id integer NOT NULL,
+    user_id integer NOT NULL,
+    address text NOT NULL,
+    landlord_name character varying(100) NOT NULL,
+    landlord_phone character varying(20),
+    agent_name character varying(100),
+    lease_start date,
+    lease_end date,
+    is_current boolean DEFAULT false
+);
+
+
+ALTER TABLE public.properties OWNER TO postgres;
+
+--
+-- TOC entry 221 (class 1259 OID 16451)
+-- Name: properties_property_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public.properties_property_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.properties_property_id_seq OWNER TO postgres;
+
+--
+-- TOC entry 5068 (class 0 OID 0)
+-- Dependencies: 221
+-- Name: properties_property_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public.properties_property_id_seq OWNED BY public.properties.property_id;
+
+
+--
+-- TOC entry 220 (class 1259 OID 16437)
+-- Name: users; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.users (
+    user_id integer NOT NULL,
+    full_name character varying(100) NOT NULL,
+    email character varying(100) NOT NULL,
+    password character varying(255) NOT NULL,
+    phone character varying(20),
+    created_at timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
+    updated_at timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
+    last_login timestamp without time zone
+);
+
+
+ALTER TABLE public.users OWNER TO postgres;
+
+--
+-- TOC entry 219 (class 1259 OID 16436)
+-- Name: users_user_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public.users_user_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.users_user_id_seq OWNER TO postgres;
+
+--
+-- TOC entry 5069 (class 0 OID 0)
+-- Dependencies: 219
+-- Name: users_user_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public.users_user_id_seq OWNED BY public.users.user_id;
+
+
+--
+-- TOC entry 4891 (class 2604 OID 16530)
+-- Name: audit_logs log_id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.audit_logs ALTER COLUMN log_id SET DEFAULT nextval('public.audit_logs_log_id_seq'::regclass);
+
+
+--
+-- TOC entry 4886 (class 2604 OID 16474)
+-- Name: bonds bond_id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.bonds ALTER COLUMN bond_id SET DEFAULT nextval('public.bonds_bond_id_seq'::regclass);
+
+
+--
+-- TOC entry 4889 (class 2604 OID 16509)
+-- Name: documents document_id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.documents ALTER COLUMN document_id SET DEFAULT nextval('public.documents_document_id_seq'::regclass);
+
+
+--
+-- TOC entry 4888 (class 2604 OID 16491)
+-- Name: inspections inspection_id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.inspections ALTER COLUMN inspection_id SET DEFAULT nextval('public.inspections_inspection_id_seq'::regclass);
+
+
+--
+-- TOC entry 4884 (class 2604 OID 16455)
+-- Name: properties property_id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.properties ALTER COLUMN property_id SET DEFAULT nextval('public.properties_property_id_seq'::regclass);
+
+
+--
+-- TOC entry 4881 (class 2604 OID 16440)
+-- Name: users user_id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.users ALTER COLUMN user_id SET DEFAULT nextval('public.users_user_id_seq'::regclass);
+
+
+--
+-- TOC entry 4906 (class 2606 OID 16538)
+-- Name: audit_logs audit_logs_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.audit_logs
+    ADD CONSTRAINT audit_logs_pkey PRIMARY KEY (log_id);
+
+
+--
+-- TOC entry 4900 (class 2606 OID 16481)
+-- Name: bonds bonds_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.bonds
+    ADD CONSTRAINT bonds_pkey PRIMARY KEY (bond_id);
+
+
+--
+-- TOC entry 4904 (class 2606 OID 16520)
+-- Name: documents documents_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.documents
+    ADD CONSTRAINT documents_pkey PRIMARY KEY (document_id);
+
+
+--
+-- TOC entry 4902 (class 2606 OID 16499)
+-- Name: inspections inspections_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.inspections
+    ADD CONSTRAINT inspections_pkey PRIMARY KEY (inspection_id);
+
+
+--
+-- TOC entry 4898 (class 2606 OID 16464)
+-- Name: properties properties_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.properties
+    ADD CONSTRAINT properties_pkey PRIMARY KEY (property_id);
+
+
+--
+-- TOC entry 4894 (class 2606 OID 16450)
+-- Name: users users_email_key; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.users
+    ADD CONSTRAINT users_email_key UNIQUE (email);
+
+
+--
+-- TOC entry 4896 (class 2606 OID 16448)
+-- Name: users users_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.users
+    ADD CONSTRAINT users_pkey PRIMARY KEY (user_id);
+
+
+--
+-- TOC entry 4911 (class 2606 OID 16539)
+-- Name: audit_logs audit_logs_user_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.audit_logs
+    ADD CONSTRAINT audit_logs_user_id_fkey FOREIGN KEY (user_id) REFERENCES public.users(user_id) ON DELETE SET NULL;
+
+
+--
+-- TOC entry 4908 (class 2606 OID 16482)
+-- Name: bonds bonds_property_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.bonds
+    ADD CONSTRAINT bonds_property_id_fkey FOREIGN KEY (property_id) REFERENCES public.properties(property_id) ON DELETE CASCADE;
+
+
+--
+-- TOC entry 4910 (class 2606 OID 16521)
+-- Name: documents documents_user_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.documents
+    ADD CONSTRAINT documents_user_id_fkey FOREIGN KEY (user_id) REFERENCES public.users(user_id) ON DELETE CASCADE;
+
+
+--
+-- TOC entry 4909 (class 2606 OID 16500)
+-- Name: inspections inspections_property_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.inspections
+    ADD CONSTRAINT inspections_property_id_fkey FOREIGN KEY (property_id) REFERENCES public.properties(property_id) ON DELETE CASCADE;
+
+
+--
+-- TOC entry 4907 (class 2606 OID 16465)
+-- Name: properties properties_user_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.properties
+    ADD CONSTRAINT properties_user_id_fkey FOREIGN KEY (user_id) REFERENCES public.users(user_id) ON DELETE CASCADE;
+
+
+-- Completed on 2026-05-01 14:12:20
+
+--
+-- PostgreSQL database dump complete
+--
+
+\unrestrict b3VVcetJj5C1YySW2FJ3yMG8TTligCF5ZJ3g6i1cltvwlUvFaAbSLMcOhNLXz7d
+
+
+
